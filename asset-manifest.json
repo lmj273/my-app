@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.3d1f822f.css",
-    "main.js": "/my-app/static/js/main.8dadff9e.js",
-    "static/media/Pencil.jpg": "/my-app/static/media/Pencil.7d7824c6cd991eb49ce4.jpg",
-    "static/media/Hello.jpg": "/my-app/static/media/Hello.690bd2dd2915cc564f69.jpg",
-    "static/media/f.jpg": "/my-app/static/media/f.653af01621d219357a2f.jpg",
-    "static/media/slick.svg": "/my-app/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/my-app/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/my-app/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/my-app/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/my-app/index.html",
-    "main.3d1f822f.css.map": "/my-app/static/css/main.3d1f822f.css.map",
-    "main.8dadff9e.js.map": "/my-app/static/js/main.8dadff9e.js.map"
+    "main.css": "https://lmj273.github.io/my-app/static/css/main.ae2e4259.css",
+    "main.js": "https://lmj273.github.io/my-app/static/js/main.7f9ecc00.js",
+    "static/media/Pencil.jpg": "https://lmj273.github.io/my-app/static/media/Pencil.7d7824c6cd991eb49ce4.jpg",
+    "static/media/Hello.jpg": "https://lmj273.github.io/my-app/static/media/Hello.690bd2dd2915cc564f69.jpg",
+    "static/media/f.jpg": "https://lmj273.github.io/my-app/static/media/f.653af01621d219357a2f.jpg",
+    "static/media/slick.svg": "https://lmj273.github.io/my-app/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "https://lmj273.github.io/my-app/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "https://lmj273.github.io/my-app/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "https://lmj273.github.io/my-app/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "https://lmj273.github.io/my-app/index.html",
+    "main.ae2e4259.css.map": "https://lmj273.github.io/my-app/static/css/main.ae2e4259.css.map",
+    "main.7f9ecc00.js.map": "https://lmj273.github.io/my-app/static/js/main.7f9ecc00.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d1f822f.css",
-    "static/js/main.8dadff9e.js"
+    "static/css/main.ae2e4259.css",
+    "static/js/main.7f9ecc00.js"
   ]
 }
