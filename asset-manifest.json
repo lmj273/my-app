@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.3d1f822f.css",
-    "main.js": "/my-app/static/js/main.aa1ddb70.js",
-    "static/media/Pencil.jpg": "/my-app/static/media/Pencil.7d7824c6cd991eb49ce4.jpg",
-    "static/media/Hello.jpg": "/my-app/static/media/Hello.690bd2dd2915cc564f69.jpg",
-    "static/media/f.jpg": "/my-app/static/media/f.653af01621d219357a2f.jpg",
-    "static/media/slick.svg": "/my-app/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/my-app/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/my-app/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/my-app/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/my-app/index.html",
-    "main.3d1f822f.css.map": "/my-app/static/css/main.3d1f822f.css.map",
-    "main.aa1ddb70.js.map": "/my-app/static/js/main.aa1ddb70.js.map"
+    "main.css": "/my-app/build/static/css/main.a3676ed7.css",
+    "main.js": "/my-app/build/static/js/main.0d8a16be.js",
+    "static/media/Pencil.jpg": "/my-app/build/static/media/Pencil.7d7824c6cd991eb49ce4.jpg",
+    "static/media/Hello.jpg": "/my-app/build/static/media/Hello.690bd2dd2915cc564f69.jpg",
+    "static/media/f.jpg": "/my-app/build/static/media/f.653af01621d219357a2f.jpg",
+    "static/media/slick.svg": "/my-app/build/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/my-app/build/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/my-app/build/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/my-app/build/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/my-app/build/index.html",
+    "main.a3676ed7.css.map": "/my-app/build/static/css/main.a3676ed7.css.map",
+    "main.0d8a16be.js.map": "/my-app/build/static/js/main.0d8a16be.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d1f822f.css",
-    "static/js/main.aa1ddb70.js"
+    "static/css/main.a3676ed7.css",
+    "static/js/main.0d8a16be.js"
   ]
 }
