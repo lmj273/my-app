@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+#sideBox {
+  width: 20%;
+  padding-top: 5%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  z-index: 1;
+}
+#sideBox div {
+  margin-bottom: 25px;
+}
+li {
+  margin-bottom: 10px;
+}
+.name {
+  font-weight: bold;
+  font-size: 24px;
+  font-family: "Lobster", cursive;
+}
+.pictureImg {
+  width: 80%;
+  border-radius: 50%;
+}
+.pictureImg:hover {
+  cursor: pointer;
+}
+.email {
+  font-size: 18px;
+}
+.email a:link {
+  color: black;
+  text-decoration-line: none;
+}
+.email a:visited {
+  color: black;
+}
+.email a:hover {
+  color: red;
+}
+.linkList {
+  font-size: 18px;
+  font-weight: 700;
+}
+.linkList li:hover {
+  cursor: pointer;
+  color: red;
+}
+.contactList a:link {
+  color: black;
+}
+.contactList a:visited {
+  color: black;
+}
+.contactList a:hover {
+  color: red;
+}
+@media all and (max-width: 1024px) {
+  #sideBox {
+    width: 30%;
+  }
+}
