@@ -24,7 +24,6 @@ function SlideMenu() {
       <Slider {...settings}>
         <div className="window">
           <img src={Hello} alt="" />
-
           <div className="text1">
             i{`'`}m groot
             <br />
@@ -35,7 +34,6 @@ function SlideMenu() {
         </div>
         <div className="window">
           <img src={Pencil} alt="" />
-
           <div className="text2">
             I love building <br />
             THINGS!!
