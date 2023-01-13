@@ -22,9 +22,9 @@ function SideMenu() {
       <div className="profile">
         <div className="hash">
           <ul>
-            <li># 개는 멍멍</li>
-            <li># 고양이는 야옹</li>
-            <li># 소는 음머</li>
+            <li># programmer_life</li>
+            <li># hello_world</li>
+            <li># coding</li>
           </ul>
         </div>
         <div className="name">Sachin Mittal</div>

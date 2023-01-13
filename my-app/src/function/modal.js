@@ -17,7 +17,7 @@ function Modal(abc) {
           </header>
           <main>
             <img src={Dog} alt="" />
-            <div>에헤라디야</div>
+            <div>Hellow</div>
           </main>
           <footer>
             <button type="button" className="close" onClick={close}>
