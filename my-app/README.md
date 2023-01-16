@@ -129,6 +129,9 @@ const useScrollFadeIn = (direction, duration, delay) => {
 ```
 
 * 좌측 사이드 메뉴 링크 클릭시 특정 div로 스크롤 이동
+
+![scroll](https://user-images.githubusercontent.com/122003112/212581686-f1b76c14-f585-468d-8aa3-2087d6c069bd.gif)
+
 ```js
 <div className="linkList">
         <ul>
