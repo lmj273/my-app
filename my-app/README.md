@@ -19,6 +19,10 @@ npm install react-slick --save
 ```
 npm install react-icons --save
 ```
+**react-scroll**
+```
+npm install react-scroll
+```
 
 ## 주요 기능
 
