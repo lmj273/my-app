@@ -23,6 +23,9 @@ npm install react-icons --save
 ## 주요 기능
 
 * 슬라이드배너
+
+![slide](https://user-images.githubusercontent.com/122003112/212579085-f8bbcd60-4e23-46b9-b2b1-123a564233e6.gif)
+
 ```js
 function SlideMenu() {
   const settings = {
@@ -68,10 +71,13 @@ function SlideMenu() {
 ```
 * 스크롤 애니매에션효과 스크롤시 숨겨진 요소 생성
 
+![translate](https://user-images.githubusercontent.com/122003112/212579469-83be9609-cc39-4daf-8e6f-2d456b6ae2f8.gif)
+
 ```js
 const useScrollFadeIn = (direction, duration, delay) => {
   const element = useRef();
-
+  
+//direction
   const handleDirection = (name) => {
     switch (name) {
       case "up":
@@ -86,7 +92,8 @@ const useScrollFadeIn = (direction, duration, delay) => {
         return "translate3d(0, 0, 0)";
     }
   };
-
+  
+//duration, delay
   const onScroll = useCallback(
     ([entry]) => {
       const { current } = element;
@@ -101,7 +108,8 @@ const useScrollFadeIn = (direction, duration, delay) => {
     },
     [delay, duration]
   );
-
+  
+//한번만 동작, 동작 타이밍 설정
   useEffect(() => {
     let observer;
 
@@ -143,7 +151,115 @@ const useScrollFadeIn = (direction, duration, delay) => {
       </div>
 ```
 * 좌측 사이드 메뉴 이미지클릭시 modal 생성 외부 회색 영역 선택시에도 창꺼짐
+
+![modal](https://user-images.githubusercontent.com/122003112/212580148-54ff6422-d780-4d1b-bfe3-730d5f8d2037.gif)
+
+```js
+function Modal(abc) {
+  const { open, close, header } = abc;
+
+  return (
+    <div className={open ? "openModal modal" : "modal"}>
+      {open ? (
+        <section>
+          <header>
+            {header}
+            <button type="button" className="close" onClick={close}>
+              &times;
+            </button>
+          </header>
+          <main>
+            <img src={Dog} alt="" />
+            <div>Hellow</div>
+          </main>
+          <footer>
+            <button type="button" className="close" onClick={close}>
+              close
+            </button>
+          </footer>
+        </section>
+      ) : null}
+    </div>
+  );
+}
+~~~~~~
+const [modalOpen, setModalOpen] = useState(false);
+<div
+          className="picture"
+          role="presentation"
+          onClick={() => setModalOpen(!modalOpen)}
+        >
+          {modalOpen && (
+            <Modal
+              open={modalOpen}
+              close={() => setModalOpen(modalOpen)}
+              header="Profile"
+            >
+              <main />
+            </Modal>
+          )}
+          <img className="pictureImg" src={Dog} alt="" />
+        </div>
+
+```
+
 * 우측하단부 화면 최상단 이동 버튼, 최상단일때는 사라짐
-* 화면 너비에 따른 요소 변화
+
+![gotop](https://user-images.githubusercontent.com/122003112/212580548-22528f19-1c29-4c7b-9442-2769b979d1b6.gif)
+
+```js
+function GoTop() {
+  const [ScrollY, setScrollY] = useState(0);
+  const [BtnStatus, setBtnStatus] = useState(false);
+
+  const handleFollow = () => {
+    setScrollY(window.pageYOffset);
+    if (ScrollY > 50) { //보이기 시작하는 위치
+      setBtnStatus(true);
+    } else {
+      setBtnStatus(false);
+    }
+  };
+
+  const handleTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+    setScrollY(0);
+    setBtnStatus(false);
+  };
+
+  useEffect(() => {
+    const watch = () => {
+      window.addEventListener("scroll", handleFollow);
+    };
+    watch();
+    return () => {
+      window.removeEventListener("scroll", handleFollow);
+    };
+  });
+
+  return (
+    <button
+      type="button"
+      className={BtnStatus ? "topBtn active" : "topBtn"}
+      onClick={handleTop}
+    >
+      Top
+    </button>
+  );
+}
+
+export default Gotop;
+```
+
+* 화면에 따른 요소 변화
+
+너비 ~1024 일때 sidemenu, education 영역 요소 변화
+
+너비 ~767 일때 sidemenu 숨김
+
+높이 ~800 일때 sidemenu fixed가 풀리고 같이 스크롤
 
 ---
